@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* примеры подключения шрифтов 
+@include font-face("Kaushan Script", "../fonts/KaushanScript-Regular/KaushanScript-Regular");
+@include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular");
+@include font-face("Montserrat", "../fonts/Montserrat-Bold/Montserrat-Bold", bold);
+@include font-face("Roboto", "../fonts/Roboto-Regular/Roboto-Regular");
+@include font-face("Roboto", "../fonts/Roboto-LightItalic/Roboto-LightItalic", 300, italic);
+*/
+body {
+  font-family: "roboto-example", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5 {
+    /*
+		font-family: "Montserrat";
+		font-weight: bold;
+		*/ }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }

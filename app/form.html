@@ -79,10 +79,74 @@
 
       <fieldset class="beard-model">
         <legend class="beard-model__legend">Выберите модель бороды:</legend>
+
+        <ul class="beard-model__list">
+          <li class="beard-model__item">
+            <input class="beard-model__radio" type="radio" name="beard-model" id="admiral" checked>
+            <label class="beard-model__label" for="admiral">Адмирал</label>
+            <img class="beard-model__image" src="img/beard-1.svg" width="52" height="49" alt="Борода Адмирал">
+          </li>
+
+          <li class="beard-model__item">
+            <input class="beard-model__radio" type="radio" name="beard-model" id="lesorub">
+            <label class="beard-model__label" for="lesorub">Лесоруб</label>
+            <img class="beard-model__image" src="img/beard-2.svg" width="58" height="68" alt="Борода Лесоруб">
+          </li>
+
+          <li class="beard-model__item">
+            <input class="beard-model__radio" type="radio" name="beard-model" id="polar">
+            <label class="beard-model__label" for="polar">Полярник</label>
+            <img class="beard-model__image" src="img/beard-3.svg" width="64" height="78" alt="Борода Полярник">
+          </li>
+
+          <li class="beard-model__item">
+            <input class="beard-model__radio" type="radio" name="beard-model" id="boyarin">
+            <label class="beard-model__label" for="boyarin">Борярин</label>
+            <img class="beard-model__image" src="img/beard-4.svg" width="58" height="98" alt="Борода Боярин">
+          </li>
+
+          <li class="beard-model__item">
+            <input class="beard-model__radio" type="radio" name="beard-model" id="mudrez">
+            <label class="beard-model__label" for="mudrez">Мудрец</label>
+            <img class="beard-model__image" src="img/beard-5.svg" width="46" height="105" alt="Борода Мудрец">
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="services">
         <legend class="services__legend">Дополнительные услуги:</legend>
+
+        <ul class="services__list">
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="paint-beard" id="paint-beard" checked>
+            <label class="services__label" for="paint-beard">Подкрасить бороду</label>
+          </li>
+
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="wind-up-mustache" id="wind-up-mustache" checked>
+            <label class="services__label" for="wind-up-mustache">Накрутить усы</label>
+          </li>
+
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="comb-beard" id="comb-beard">
+            <label class="services__label" for="comb-beard">Причесать бороду</label>
+          </li>
+
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="trim" id="trim">
+            <label class="services__label" for="trim">Подравнять виски</label>
+          </li>
+
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="gray-hair" id="gray-hair">
+            <label class="services__label" for="gray-hair">Убрать седину</label>
+          </li>
+
+          <li class="services__item">
+            <input class="services__checkbox" type="checkbox" name="polishing" id="polishing">
+            <label class="services__label" for="polishing">Отполировать лысину</label>
+          </li>
+        </ul>
       </fieldset>
 
       <button class="appointment-form__submit button" type="submit">Отправить заявку</button>

@@ -1,5 +1,8 @@
 @import "_mixins/font-face";
 
+@include font-face("PTSansNarrow", "../fonts/PTSansNarrow/PTSansNarrow-Regular");
+@include font-face("PTSansNarrow", "../fonts/PTSansNarrow/PTSansNarrow-Bold", bold);
+
 /* примеры подключения шрифтов 
 @include font-face("Kaushan Script", "../fonts/KaushanScript-Regular/KaushanScript-Regular");
 @include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular");

@@ -351,3 +351,97 @@ input[type="radio"].visually-hidden {
       opacity: 0.1; }
   .user-list__login-icon {
     left: 15px; } }
+
+/*  stats block =========================================*/
+.stats {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto; }
+
+.stats__header {
+  padding: 30px 40px 25px 40px;
+  text-align: center;
+  background-color: #ffffff; }
+
+.stats__slogan {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.stats__info {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center; }
+
+.stats__legend {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center; }
+
+.stats__legend--top {
+  display: none; }
+
+.stats__legend--bottom {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #242424; }
+
+.stats__list {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #404040; }
+
+.stats__list tr:nth-child(2) {
+  background-color: #4e4e4e; }
+
+.stats__list tr:nth-child(3) {
+  background-color: #353535; }
+
+.stats__value {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff; }
+
+.stats__field {
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f7f4f1;
+  text-align: right; }
+
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px; }
+  .stats__list {
+    display: flex; } }
+
+@media (min-width: 1200px) {
+  .stats {
+    flex-direction: row;
+    width: 960px;
+    margin-top: -160px; }
+  .stats__header {
+    width: 320px; }
+  .stats_list {
+    width: 640px; } }
+
+/* advantages ================================================ */
+.advantages {
+  color: #f7f4f1;
+  background-color: #242424; }
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }

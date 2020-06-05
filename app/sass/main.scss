@@ -719,15 +719,18 @@
 .news {
   width: 320px;
   margin: 0 auto;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 28px;
 
   background-color: #ffffff;
+  border-bottom: 1px solid #e5ddd5;
 }
 
 .news__title {
   margin: 0;
-  padding: 30px 0;
+  padding: 0;
 
   text-align: center;
 
@@ -744,6 +747,16 @@
 .news__item {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news__item:first-child {
+  border-bottom: 1px solid #e5ddd5;
+}
+
+.news__item:nth-child(3) {
+  display: none;
 }
 
 .news__date {
@@ -804,7 +817,87 @@
   line-height: 27px;
 }
 
+/* button ======================================== */
 
+.button {
+  display: block;
 
+  padding-top: 15px;
+  padding-bottom: 15px;
 
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 
+  background: none;
+  border: 1px solid #e5ddd5;
+}
+
+/* reviews ======================================= */
+
+.reviews {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 52px;
+
+  background-color: #ffffff;
+}
+
+.reviews::before,
+.reviews::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0; 
+}
+
+.reviews::before {
+  left: 0;
+
+  border-bottom: 35px solid #242424;
+  border-right: 160px solid transparent;
+}
+
+.reviews::after {
+  right: 0;
+
+  border-bottom: 35px solid #242424;
+  border-left: 160px solid transparent;
+}
+
+.reviews__title {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.reviews__write,
+.reviews__item:nth-child(2),
+.reviews__item:nth-child(3),
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+.reviews__toggles .slider__toggle:first-child {
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+/* page-footer ==============================*/
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}

@@ -427,8 +427,68 @@ input[type="radio"].visually-hidden {
   .stats {
     width: 640px;
     margin-top: -185px; }
-  .stats__list {
-    display: flex; } }
+  .stats__header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 185px;
+    padding-top: 35px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px; }
+  .stats__slogan {
+    width: 50%;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: none;
+    text-align: left; }
+  .stats__intro {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 32px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: left; }
+  .stats__legend--top {
+    display: block;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+    opacity: 0.3; }
+  .stats__legend--bottom {
+    display: none; }
+  .stats__list tbody {
+    display: flex;
+    flex-wrap: wrap; }
+  .stats__list tr {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 38px;
+    padding-bottom: 30px;
+    width: 50%; }
+  .stats__value {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+    font-size: 70px;
+    line-height: 70px; }
+  .stats__field {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: left; }
+    .stats__field br {
+      display: none; } }
 
 @media (min-width: 1200px) {
   .stats {
@@ -436,9 +496,21 @@ input[type="radio"].visually-hidden {
     width: 960px;
     margin-top: -160px; }
   .stats__header {
-    width: 320px; }
+    flex-direction: column;
+    width: 320px;
+    height: 320px;
+    padding-bottom: 0; }
+  .stats__slogan {
+    margin-bottom: 40px;
+    width: 100%; }
+  .stats__intro {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 25px; }
   .stats_list {
-    width: 640px; } }
+    width: 640px; }
+  .stats__list tr {
+    height: 160px; } }
 
 /* advantages ================================================ */
 .advantages {
